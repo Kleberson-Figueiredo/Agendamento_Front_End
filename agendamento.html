@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Agendamento</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" >
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .container {
+        max-width: 960px;
+        }
+
+        .lh-condensed { line-height: 1.25; }
+    </style>
+
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="img/cadastro.png" alt="" width="72" height="72">
+    <h2>Agendamento</h2>
+  </div>
+
+  <div class="row">
+      <form method="post" id="agendamento">
+        <h4 class="mb-3">Data e Horário</h4>
+        <hr class="mb-4">
+        <div  class="mb-3">
+          <label>Selecione a Data *</label>
+          <input type="datetime" name="data" id="data" min="2021-12-01" required />
+          <p><span></span><small></small></span></p><div id="divDtFutura"></div>
+        </div>
+        <div  class="mb-3">
+          <label> Selecione o Horário</label>
+          <select name="horario" class="text" id="hora_inicio">
+            <option id="hora_inicio" value="08:00" id="hora_fim" value="08:30" >08:00</option>
+            <option value="08:30">08:30</option>
+            <option value="09:00">09:00</option>
+            <option value="09:30">09:30</option>
+            <option value="10:00">10:00</option>
+            <option value="10:30">10:30</option>
+            <option value="11:00">11:00</option>
+            <option value="11:30">11:30</option>
+            <option value="12:00">12:00</option>
+            <option value="12:00">12:30</option>
+            <option value="13:00">13:00</option>
+            <option value="13:30">13:30</option>
+            <option value="14:00">14:00</option>
+            <option value="14:30">14:30</option>
+            <option value="15:00">15:00</option>
+            <option value="15:30">15:30</option>
+            <option value="16:00">16:00</option>
+            <option value="16:30">16:30</option>
+            <option value="17:00">17:00</option>
+            <option value="17:30">17:30</option>
+            <option value="18:00">18:00</option>
+            <option value="19:00">19:00</option>
+            <option value="19:30">19:30</option>
+          </select>
+        </div>
+        
+        <button class="btn btn-primary btn-lg btn-block" type="submit" onclick="inserir_agendamento()">Concluir</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; ReserveOn </p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/src/static/js/agendamento.js"></script>
+
+  </body>
+</html>

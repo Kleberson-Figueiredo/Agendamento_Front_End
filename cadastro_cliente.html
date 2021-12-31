@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Cadastro Cliente</title>
+
+    <!-- Bootstrap core CSS -->
+   <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .container {
+        max-width: 960px;
+        }
+
+        .lh-condensed { line-height: 1.25; }
+   </style>
+
+  </head>
+  <body class="bg-light">
+    
+   <div class="container align-self-center">
+     <div class="py-5 text-center">
+       <img class="d-block mx-auto mb-4" src="img/cadastro.png" alt="" width="72" height="72">
+       <h2>Cadastro Usuário</h2>
+     </div>
+    
+     <div class="row">
+        <div class="col-md-8 order-md-1">
+         <h4 class="mb-3">Dados Pessoais</h4>
+         <form method="post" id="sample_form" class="needs-validation" novalidate>
+            <div class="mb-3">
+            <label for="nome" class="form-label">Nome Completo</label>
+            <input type="text" class="form-control is-invalid" id="nome" placeholder="" value="" required>
+            <div class="invalid-feedback">
+             Campo obrigatório.
+            </div>
+          
+            <div class="mb-3">
+              <label for="rg" class="form-label">RG</label>
+              <input type="text" class="form-control is-invalid" id="rg" placeholder="000000000" ria-describedby="validationServer05Feedback" required>
+              <div class="invalid-feedback">
+                Campo obrigatório.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="cpf" class="form-label">CPF</label>
+              <input type="text" class="form-control is-invalid" id="cpf" placeholder="000.000.000-00" required>
+              <div class="invalid-feedback">
+                Campo obrigatório.
+              </div>
+            </div>
+
+            <div class="mb-3">
+             <label for="telefone" class="form-label">Telefone</label>
+             <input type="text" class="form-control is-invalid" id="telefone" placeholder="(00) 00000-0000" required >
+            </div>
+      
+            <hr class="mb-4">
+            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="inserir_cliente()">Salvar Cliente</button>
+         </form>
+       </div>
+     
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+          <p class="mb-1">&copy; ReserveOn </p>
+         <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+           <li class="list-inline-item"><a href="#">Terms</a></li>
+           <li class="list-inline-item"><a href="#">Support</a></li>
+         </ul>
+        </footer>
+      </div>
+    </div>
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/src/static/js/cliente.js">
+    </script>
+
+  </body>
+</html>
+

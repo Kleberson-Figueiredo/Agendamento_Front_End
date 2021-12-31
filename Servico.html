@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Serviço</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" >
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .container {
+        max-width: 960px;
+        }
+
+        .lh-condensed { line-height: 1.25; }
+    </style>
+
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="/img/Servico.png" alt="" width="72" height="72">
+    <h2>Serviço</h2>
+  </div>
+
+  <div class="col-10">
+    
+    <div class="col-md-12 order-md-1">
+      <h4 class="mb-3">Escolha o Tipo do Serviço</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="mb-3">
+            <label for="categoria_fk" class="form-label">Categoria</label>
+            
+            <select class="form-control" id="categoria_fk">
+              <option value="">Selecione a Categoria</option>
+              <option value="1">Maquiagen</option>
+              <option value="2">Manicure e pedicure</option>
+              <option value="3">Depilação</option>
+              <option value="4">Cabelo (corte, pintura, progressiva e etc.)</option>
+              <option value="5"></option>
+            </select>
+            <div class="invalid-feedback">
+              Campo obrigatório.
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+        <div class="mb-3">
+          <label for="Valor">Valor</label>
+          <input type="text" class="form-control" id="Valor" placeholder="R$" required>
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+          </div>
+        </div>
+        <hr class="mb-4">
+        <a href="/agendamento.html">
+            <input class="btn btn-primary btn-lg btn-block" type="button" value="SOLICITAR">
+          </a>
+      </form>
+    </div>
+  </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; ReserveOn</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.6/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="form-validation.js"></script>
+    <script src="/src/static/js/servico.js"></script>
+  </body>
+</html>
